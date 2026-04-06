@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хедер с выпадающим меню</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="nav-container">
+        <div class="logo-area" id="logoHome">✨ NavHub</div>
+
+        <ul class="nav-menu" id="navMenu">
+            <!-- Пункт "DDn" - без выпадающего, переход на главную -->
+            <li class="nav-item">
+                <a class="nav-link" id="ddnLink">🏠 DDn</a>
+            </li>
+
+            <!-- Пункт "видео" с выпадающим меню из 3 видео -->
+            <li class="nav-item" id="videoDropdownItem">
+                <a class="nav-link dropdown-trigger" id="videoTrigger">📹 Видео</a>
+                <ul class="dropdown-menu" id="videoDropdown">
+                    <li><a href="#" data-video="video1">🎬 Введение в проект</a></li>
+                    <li><a href="#" data-video="video2">🎥 Как работает навигация</a></li>
+                    <li><a href="#" data-video="video3">📺 JavaScript для начинающих</a></li>
+                </ul>
+            </li>
+
+            <!-- Пункт инструкция -->
+            <li class="nav-item">
+                <a class="nav-link" id="instructionsLink">📘 Инструкция</a>
+            </li>
+
+            <!-- Пункт контакты -->
+            <li class="nav-item">
+                <a class="nav-link" id="contactsLink">✉️ Контакты</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<main class="main-content">
+    <div class="hero" id="dynamicContent">
+        <h1>Добро пожаловать</h1>
+        <p>Интерактивный хедер с выпадающим меню (JavaScript).</p>
+        <div class="info-card">
+            ⚡ <strong>Функционал:</strong> Вкладка "DDn" возвращает на главную. <br>
+            🎞️ "Видео" — выпадающий список из 3 видео (демо-ссылки). <br>
+            📖 "Инструкция" и "Контакты" — отдельные разделы.
+        </div>
+        <hr>
+        <div id="infoPanel" style="margin-top: 1rem; padding: 0.8rem; background: #eef3fa; border-radius: 1rem;">
+            👆 Кликните по любому пункту меню.
+        </div>
+    </div>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
