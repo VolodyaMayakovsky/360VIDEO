@@ -10,53 +10,71 @@
 
 <header class="header">
     <div class="nav-container">
-        <div class="logo-area" id="logoHome">✨ NavHub</div>
+        <div class="logo-area" id="logoHome">DDn</div>
 
         <ul class="nav-menu" id="navMenu">
-            <!-- Пункт "DDn" - без выпадающего, переход на главную -->
-            <li class="nav-item">
-                <a class="nav-link" id="ddnLink">🏠 DDn</a>
-            </li>
 
-            <!-- Пункт "видео" с выпадающим меню из 3 видео -->
             <li class="nav-item" id="videoDropdownItem">
-                <a class="nav-link dropdown-trigger" id="videoTrigger">📹 Видео</a>
+                <a class="nav-link dropdown-trigger" id="videoTrigger">Видео</a>
                 <ul class="dropdown-menu" id="videoDropdown">
-                    <li><a href="#" data-video="video1">🎬 Введение в проект</a></li>
-                    <li><a href="#" data-video="video2">🎥 Как работает навигация</a></li>
-                    <li><a href="#" data-video="video3">📺 JavaScript для начинающих</a></li>
+                    <li><a href="#" data-video="video1">Видео один</a></li>
+                    <li><a href="#" data-video="video2">Видео два</a></li>
+                    <li><a href="#" data-video="video3">Видео три</a></li>
                 </ul>
             </li>
 
-            <!-- Пункт инструкция -->
             <li class="nav-item">
-                <a class="nav-link" id="instructionsLink">📘 Инструкция</a>
-            </li>
-
-            <!-- Пункт контакты -->
-            <li class="nav-item">
-                <a class="nav-link" id="contactsLink">✉️ Контакты</a>
+                <a class="nav-link" id="instructionsLink">Инструкция</a>
             </li>
         </ul>
     </div>
 </header>
 
 <main class="main-content">
-    <div class="hero" id="dynamicContent">
-        <h1>Добро пожаловать</h1>
-        <p>Интерактивный хедер с выпадающим меню (JavaScript).</p>
-        <div class="info-card">
-            ⚡ <strong>Функционал:</strong> Вкладка "DDn" возвращает на главную. <br>
-            🎞️ "Видео" — выпадающий список из 3 видео (демо-ссылки). <br>
-            📖 "Инструкция" и "Контакты" — отдельные разделы.
+    <!-- ОСНОВНОЙ БЛОК ДЛЯ ВИДЕО -->
+    <div class="video-section" id="videoSection">
+        <h2>Видеоплеер</h2>
+        <div class="video-placeholder" id="videoPlaceholder">
+            Выберите видео из выпадающего меню "Видео"
         </div>
-        <hr>
-        <div id="infoPanel" style="margin-top: 1rem; padding: 0.8rem; background: #eef3fa; border-radius: 1rem;">
-            👆 Кликните по любому пункту меню.
+    </div>
+
+    <!-- БЛОК С ИНСТРУКЦИЕЙ (всегда виден, обновляется при клике) -->
+    <div class="instructions-section" id="instructionsSection">
+        <h2>Инструкция</h2>
+        <div class="instructions-content" id="instructionsContent">
+            <p>Нажмите на пункт меню <strong>"Инструкция"</strong>, чтобы увидеть подробное руководство.</p>
+            <p>Для просмотра видео используйте выпадающее меню <strong>"Видео"</strong>.</p>
+            <p>Кнопка <strong>"DDn"</strong> или логотип возвращают на главную страницу.</p>
         </div>
     </div>
 </main>
 
+<footer class="footer">
+    <div class="footer-contacts footer_container">
+        <h3>Контакты</h3>
+        <p>Email: support@navdemo.com</p>
+        <p>Telegram: @nav_header_demo</p>
+        <p>GitHub: @navheader</p>
+        <p>2026 НГПУ</p>
+    </div>
+
+    <div class="footer-contacts footer_container">
+        <h3>Контакты</h3>
+        <p>Email: support@navdemo.com</p>
+        <p>Telegram: @nav_header_demo</p>
+        <p>GitHub: @navheader</p>
+        <p>2026 НГПУ</p>
+    </div>
+
+    <div class="footer-contacts footer_container">
+        <h3>Контакты</h3>
+        <p>Email: support@navdemo.com</p>
+        <p>Telegram: @nav_header_demo</p>
+        <p>GitHub: @navheader</p>
+        <p>2026 НГПУ</p>
+    </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
