@@ -161,7 +161,94 @@ body {
 .instructions-content {
     color: #cbd5e1;
     line-height: 1.6;
+
 }
+
+
+/* Секция новостей - две горизонтальные колонки */
+.news-section {
+    background: #0f172a;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 1px solid #1e293b;
+}
+
+.news-section h2 {
+    color: #60a5fa;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #3b82f6;
+    padding-left: 1rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+/* Горизонтальная карточка новости */
+.news-card-horizontal {
+    background: #0a0f1a;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: all 0.25s ease;
+    border: 1px solid #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.news-card-horizontal:hover {
+    transform: translateY(-3px);
+    border-color: #3b82f6;
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
+}
+
+.news-image-horizontal {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-date {
+    font-size: 0.7rem;
+    color: #60a5fa;
+    margin-bottom: 0.25rem;
+    opacity: 0.8;
+}
+
+.news-card-horizontal h3 {
+    color: #e2e8f0;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-card-horizontal p {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* Адаптив: на узких экранах одна колонка, внутри карточка остаётся горизонтальной */
+@media (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    .news-image-horizontal {
+        width: 80px;
+        height: 80px;
+    }
+}
+
 
 /* Футер */
 /* Футер - 3 колонки */
